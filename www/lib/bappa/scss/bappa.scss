@@ -1,0 +1,167 @@
+//sass variable
+$background-color:#FF6427;
+$grey:grey;
+$font-family-sans-serif:"Lato",
+"Helvetica Neue",
+"Roboto",
+"Segoe UI",
+sans-serif !default;
+$font-family-light-sans-serif:"Lato",
+"HelveticaNeue-Light",
+"Roboto-Light",
+"Segoe UI-Light",
+sans-serif-light !default;
+$badge-font-weight:300;
+$login-bg-image:url('../img/background/login_background.jpg') no-repeat center center;
+// sass mixing
+@mixin transition($transition-property,
+$transition-time) {
+    -webkit-transition: $transition-property $transition-time;
+    -moz-transition: $transition-property $transition-time;
+    -ms-transition: $transition-property $transition-time;
+    -o-transition: $transition-property $transition-time;
+    transition: $transition-property $transition-time;
+}
+@mixin clip-path($clip) {
+    -webkit-clip-path: $clip;
+    -moz-clip-path: $clip;
+    -ms-clip-path: $clip;
+    clip-path: $clip;
+}
+//custom class
+// end
+//sass start
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/Lato-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Regular.ttf);
+}
+a,
+a:hover {
+    text-decoration: none
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-light-sans-serif !important;
+}
+p {
+    font-size: 12px !important;
+    font-family: $font-family-light-sans-serif !important;
+    font-weight: $badge-font-weight;
+}
+.login-set {
+    background-color: $background-color !important;
+    .logo {
+        margin-top: 25%;
+    }
+    .login-btn {
+        margin: 50% 8%;
+    }
+}
+.ionic-body {
+    font-family: $font-family-light-sans-serif !important;
+}
+.terms {
+    h4 {
+        padding-top: 15px;
+    }
+}
+.term-content {
+    border: 1px solid $grey;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 4px;
+}
+.create-set {
+    margin: 50% 10% 0px 10%;
+    ul {
+        margin: 25px 0px;
+    }
+}
+.next {
+    h4 {
+        i {
+            font-size: 20px;
+            vertical-align: text-bottom;
+            padding-left: 5px;
+        }
+    }
+}
+.margintop {
+    margin-top: 20px;
+}
+.footer-img {
+    border-top: 1px solid #C5B8B8;
+    padding-top: 10px;
+    ul {
+        display: block;
+        list-style: none;
+        li {
+            display: inline-block;
+            width: 60px;
+            border: 1px solid #C5B8B8;
+            margin: 5px 4px;
+            text-align: center;
+            vertical-align: middle;
+            height: 70px;
+            width: 65px;
+            overflow: hidden;
+            img {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+.bar-footer {
+    bottom: 0;
+    border-top-width: 1px;
+    border-bottom-width: 0;
+    background-position: top;
+    height: 100px !important;
+    text-align: center !important;
+}
+.cust{
+    a{
+        display: inline-block;
+            vertical-align: middle;
+        font-size: 25px;
+    padding-right: 5px;
+    }
+    p{
+        display: inline-block;
+            margin: 0px;
+    font-size: 12px !important;
+    line-height: 130%;
+    vertical-align: middle;
+    }
+}
+.custs{
+    a{
+        display: inline-block;
+            vertical-align: middle;
+        font-size: 25px;
+    padding-left: 5px;
+    }
+    p{
+        display: inline-block;
+            margin: 0px;
+    font-size: 12px !important;
+    line-height: 130%;
+    vertical-align: middle;
+    }
+}
